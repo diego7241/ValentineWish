@@ -300,19 +300,13 @@ body {
 }
 
 .carousel {
-  width: 80%;
+  width: 100%;
   max-width: 500px;
-  position: fixed;       /* lo hace flotar sobre la página */
-  top: 50%;              /* centrado vertical */
-  left: 50%;             /* centrado horizontal */
-  transform: translate(-50%, -50%);
+  margin: 30px auto;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  display: none;         /* sigue oculto al inicio */
-  z-index: 1000;         /* encima de todo */
-  background: rgba(255,255,255,0.95); /* opcional, para destacar */
-  padding: 10px;         /* opcional */
+  display: none; /* Oculto al inicio */
 }
 
 .carousel-track {
@@ -336,4 +330,3 @@ body {
   95% { transform: translateX(-300%); }
   100% { transform: translateX(0); }
 }
-
