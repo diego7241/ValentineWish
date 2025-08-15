@@ -263,7 +263,13 @@ const animationTimeline = () => {
         rotation: 90,
       },
       "+=1"
-    );
+    )
+    .call(() => {
+      const carousel = document.getElementById("photoCarousel");
+      carousel.style.display = "block";
+      gsap.from(carousel, { opacity: 0, y: 50, duration: 1 });
+    });
+
 
   // tl.seek("currentStep");
   // tl.timeScale(2);
